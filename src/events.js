@@ -95,7 +95,7 @@ export default function(ctx) {
 
     // Prevent emulated mouse events because we will fully handle the touch here.
     // This does not stop the touch events from propogating to mapbox though. (because of the lines above)
-    event.originalEvent.preventDefault();
+//     event.originalEvent.preventDefault();
     
     event.featureTarget = target;
     currentMode.touchstart(event);
@@ -123,7 +123,7 @@ export default function(ctx) {
       return;
     }
 
-    event.originalEvent.preventDefault();
+//     event.originalEvent.preventDefault();
     
     event.featureTarget = target;
     if (isTap(touchStartInfo, {
